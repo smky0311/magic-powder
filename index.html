@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>매직파우더 | 나만을 위한 개인 맞춤형 단백질 · 영양 파우더</title>
+  <meta name="description" content="비율이 바뀌면, 몸이 바뀝니다. 체성분·운동 루틴·소화 특성에 맞춘 단 하나의 과학적 포뮬러. 맞춤형 단백질, 유당불내증 프로틴, 다이어트 파우더, 올인원 헬스 보충제 — 매직파우더.">
+  <meta name="keywords" content="맞춤형 단백질, 개인맞춤 보충제, 유당불내증 프로틴, 다이어트 파우더, 올인원 헬스 보충제, 매직파우더">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="매직파우더 — 비율이 바뀌면, 몸이 바뀝니다.">
+  <meta property="og:description" content="3분 진단으로 완성하는 나만의 1:1 맞춤 영양 파우더.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= GNB ================= -->
+<header class="gnb" id="gnb">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="매직파우더 홈"><span class="logo-mark"></span>MAGIC POWDER</a>
+    <nav class="gnb-nav" id="gnbNav" aria-label="주 메뉴">
+      <a href="quiz.html">맞춤 파우더 설계</a>
+      <a href="#science">포뮬러 &amp; 과학</a>
+      <a href="#lineup">제품 라인업</a>
+      <a href="#reviews">리얼 후기</a>
+      <a href="#" data-toast="마이페이지 · 구독 관리는 로그인 후 이용할 수 있어요.">마이페이지 / 구독 관리</a>
+    </nav>
+    <div class="gnb-actions">
+      <a href="#" class="gnb-icon" aria-label="장바구니" data-toast="장바구니가 비어 있어요. 먼저 3분 진단을 받아보세요!">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      </a>
+      <a href="quiz.html" class="btn btn--lime btn--sm">3분 진단</a>
+      <button class="gnb-toggle" id="gnbToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="gnbNav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ================= 1. HERO ================= -->
+<section class="hero" id="top">
+  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="hero-copy">
+      <div class="hero-badge reveal"><i></i>개인 맞춤형 영양 파우더 D2C</div>
+      <h1 class="reveal" data-delay="1">비율이 바뀌면,<br><em>몸이 바뀝니다.</em></h1>
+      <p class="hero-sub reveal" data-delay="2">
+        보충제에 몸을 맞추지 마세요.<br>
+        당신의 <strong>체성분, 운동 루틴, 소화 특성</strong>에 맞춘<br class="br-pc"> 단 하나의 과학적 포뮬러.
+      </p>
+      <div class="hero-cta reveal" data-delay="3">
+        <a href="quiz.html" class="btn btn--lime">내 맞춤 파우더 3분 진단하기
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#science" class="link-arrow">과학적 배합 원리 알아보기</a>
+      </div>
+      <div class="hero-proof reveal" data-delay="3">
+        <div class="proof-score">
+          <div>
+            <div class="stars">★★★★★</div>
+            <b>4.9</b><span style="color:#6c6f76" class="num"> / 5.0</span>
+          </div>
+          <small>누적 <b class="num" style="font-size:13px;color:#fff" data-count="12400">0</b>+<br>맞춤 조제 완료</small>
+        </div>
+        <div class="proof-tags">
+          <span>100% 클린 라벨</span><span>유당불내증 제로 옵션</span><span>식약처 인증</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" data-delay="2" aria-label="실시간 맞춤 라벨 예시">
+      <div class="hero-chip hero-chip--a"><i>P</i><div>단백질 1g 단위 설계<b class="num" id="chipProtein">32g</b></div></div>
+      <div class="pouch" id="heroPouch">
+        <div class="pouch-brand"><span>MAGIC <b>POWDER</b></span><span>1:1 FORMULA</span></div>
+        <div class="pouch-name"><span id="heroName"></span><span class="caret"></span></div>
+        <div class="pouch-base" id="heroBase">&nbsp;</div>
+        <div class="pouch-label" id="heroRows">
+          <div class="pouch-row"><span>Protein</span><b>—</b></div>
+          <div class="pouch-row"><span>Carbs</span><b>—</b></div>
+          <div class="pouch-row"><span>BCAA</span><b>—</b></div>
+          <div class="pouch-row"><span>Enzyme</span><b>—</b></div>
+          <div class="pouch-row"><span>Electrolytes</span><b>—</b></div>
+        </div>
+        <div class="pouch-foot"><span>NET 1,000g</span><span class="pouch-bar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+      <div class="hero-chip hero-chip--b"><i>✓</i><div>소화 특성 반영<b>Lactose Free</b></div></div>
+    </div>
+  </div>
+  <a href="#problem" class="scroll-hint" aria-label="아래로 스크롤"></a>
+</section>
+
+<!-- ================= 2. PROBLEM ================= -->
+<section class="section section--light" id="problem">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <div class="eyebrow">The Problem</div>
+      <h2 class="h-title">왜 당신의 보충제는 항상<br>속이 더부룩하고 효과가 더딜까요?</h2>
+    </div>
+    <div class="problem-grid">
+      <article class="problem-card reveal" data-delay="1">
+        <div class="problem-num"><div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 12h16M12 4v16"/></svg></div>01</div>
+        <h3>획일화된<br>단백질 20g의 함정</h3>
+        <p>고강도 웨이트 트레이닝과 가벼운 유산소 다이어트는 필요한 영양 비율이 완전히 다릅니다. 남들과 똑같은 파우더는 불필요한 열량만 더합니다.</p>
+      </article>
+      <article class="problem-card reveal" data-delay="2">
+        <div class="problem-num"><div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 3 6 6 6 10a6 6 0 0 1-12 0c0-4 2-7 6-10Z"/><path d="M9.5 14.5c.5 1.2 1.4 1.8 2.5 1.8"/></svg></div>02</div>
+        <h3>가스 차고 더부룩한<br>장 트러블</h3>
+        <p>시중 저가형 농축유청단백(WPC)은 유당불내증과 여드름성 피부 트러블을 유발합니다. 내 소화기에 맞는 단백질원이 필요합니다.</p>
+      </article>
+      <article class="problem-card reveal" data-delay="3">
+        <div class="problem-num"><div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10l-1 13H8L7 7Z"/><path d="M5 7h14M10 4h4"/><path d="M10 11v5M14 11v5"/></svg></div>03</div>
+        <h3>과도하게 낭비되는<br>보충제 비용</h3>
+        <p>프로틴, BCAA, 아르기닌, 크레아틴, 비타민… 5개 통을 사놓고 반도 못 먹고 버린 경험이 있나요?</p>
+      </article>
+    </div>
+    <p class="problem-quote reveal">문제는 당신의 의지가 아니라, <span class="mark">당신에게 맞지 않는 비율</span>이었습니다.</p>
+  </div>
+</section>
+
+<!-- ================= 3. USP ================= -->
+<section class="section section--dark" id="science">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Formula &amp; Science</div>
+      <h2 class="h-title">운동은 스스로,<br><span class="hl-lime">영양은 과학으로.</span></h2>
+      <p class="h-sub">매직파우더가 완성하는 4단계 솔루션</p>
+    </div>
+    <div class="usp-grid">
+      <article class="usp-card reveal">
+        <div class="usp-top"><span class="usp-no">01</span><span class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span></div>
+        <div class="usp-en">Precision Macro</div>
+        <h3>초정밀 1:1 맞춤 매크로</h3>
+        <p>인바디 데이터, 운동 종목, 감량/증량 목적에 맞춰 단백질, 탄수화물, 아미노산을 <b style="color:#fff">1g 단위</b>로 산출합니다.</p>
+      </article>
+      <article class="usp-card reveal" data-delay="1">
+        <div class="usp-top"><span class="usp-no">02</span><span class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l-1 5a5 5 0 1 1-6 0L8 3Z"/><path d="M9 14h6"/></svg></span></div>
+        <div class="usp-en">All-in-One Blend</div>
+        <h3>올인원 스마트 블렌드</h3>
+        <p>번거로운 5가지 영양제를 <b style="color:#fff">단 1스쿱</b>으로. 활력 부스터부터 근합성, 전해질 밸런스까지 한 번에 채웁니다.</p>
+      </article>
+      <article class="usp-card reveal">
+        <div class="usp-top"><span class="usp-no">03</span><span class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-2-7-5-7-10V5l7-2 7 2v6c0 5-3 8-7 10Z"/><path d="m9 12 2 2 4-4"/></svg></span></div>
+        <div class="usp-en">Gut-Friendly Formula</div>
+        <h3>속 편한 클린 라벨</h3>
+        <p>WPI, 식물성 분리단백(완두/쌀) 선택권과 특허받은 소화효소 복합물 배합으로 <b style="color:#fff">배앓이 없는 흡수</b>를 보장합니다.</p>
+      </article>
+      <article class="usp-card reveal" data-delay="1">
+        <div class="usp-top"><span class="usp-no">04</span><span class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg></span></div>
+        <div class="usp-en">Adaptive Subscription</div>
+        <h3>데이터 적응형 포뮬러</h3>
+        <p>정체기에 머물지 않도록, 정기 구독 시 변화하는 체중 및 인바디 수치에 맞춰 <b style="color:#fff">다음 회차의 배합 비율</b>을 유기적으로 업데이트합니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. HOW IT WORKS ================= -->
+<section class="section section--light" id="how">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <div class="eyebrow">How It Works</div>
+      <h2 class="h-title">진단부터 배송까지,<br>단 3단계</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-dot">01</div>
+        <span class="step-time">3 MIN</span>
+        <h3>3분 온라인 체성분 &amp; 루틴 진단</h3>
+        <p>성별, 체중, 운동 종목, 식습관, 알레르기 유무를 객관식 문항으로 정밀 분석합니다.</p>
+      </div>
+      <div class="step reveal" data-delay="1">
+        <div class="step-dot">02</div>
+        <span class="step-time">REAL-TIME</span>
+        <h3>AI 영양 엔진의 포뮬러 맞춤 설계</h3>
+        <p>스포츠 영양학 연구 데이터를 기반으로 개인 전용 영양 배합비 및 성분표를 실시간 생성합니다.</p>
+      </div>
+      <div class="step reveal" data-delay="2">
+        <div class="step-dot">03</div>
+        <span class="step-time">FRESH MADE</span>
+        <h3>전용 라벨링 &amp; 신선 제조 배송</h3>
+        <p>당신의 이름이 각인된 전용 파우치에 주문 즉시 조제되어 가장 신선한 상태로 문 앞까지 배송됩니다.</p>
+      </div>
+    </div>
+    <div class="how-cta reveal">
+      <a href="quiz.html" class="btn btn--dark">지금 진단 시작하기
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. INTERACTIVE FORMULA PREVIEW ================= -->
+<section class="section section--charcoal" id="simulator">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Formula Simulator</div>
+      <h2 class="h-title">목표를 바꾸면,<br>라벨이 <span class="hl-cyan">즉시</span> 바뀝니다.</h2>
+      <p class="h-sub">가상으로 목표와 체질을 선택해 보세요. 나만의 성분 라벨이 실시간으로 재계산됩니다.</p>
+    </div>
+    <div class="sim">
+      <div class="sim-controls reveal">
+        <div class="sim-group">
+          <div class="sim-label"><b>A</b> 목표 선택</div>
+          <div class="seg" id="simGoal" role="radiogroup" aria-label="목표 선택">
+            <button data-v="cut" class="is-active" role="radio" aria-checked="true"><strong>체지방 커팅</strong><small>Cutting</small></button>
+            <button data-v="lean" role="radio" aria-checked="false"><strong>린매스업</strong><small>근육 증가</small></button>
+            <button data-v="run" role="radio" aria-checked="false"><strong>러닝 지구력</strong><small>Endurance</small></button>
+          </div>
+        </div>
+        <div class="sim-group">
+          <div class="sim-label"><b>B</b> 체질 선택</div>
+          <div class="seg seg--cyan" id="simType" role="radiogroup" aria-label="체질 선택">
+            <button data-v="lactose" role="radio" aria-checked="false"><strong>유당불내증</strong><small>Lactose</small></button>
+            <button data-v="caffeine" role="radio" aria-checked="false"><strong>카페인 민감</strong><small>Caffeine</small></button>
+            <button data-v="normal" class="is-active" role="radio" aria-checked="true"><strong>일반</strong><small>Normal</small></button>
+          </div>
+        </div>
+        <div class="sim-bars" id="simBars"></div>
+        <a href="quiz.html" class="btn btn--lime" id="simCta">이 포뮬러로 바로 진단 시작하기
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="sim-note">* 시뮬레이터 수치는 1회 섭취량 기준 예시이며, 실제 포뮬러는 진단 결과에 따라 1g 단위로 산출됩니다.</p>
+      </div>
+      <div class="sim-visual reveal" data-delay="1">
+        <div class="pouch" id="simPouch">
+          <div class="pouch-brand"><span>MAGIC <b>POWDER</b></span><span id="simNo" class="num">#0000</span></div>
+          <div class="pouch-name" id="simName">CUT FORMULA</div>
+          <div class="pouch-base" id="simBase"></div>
+          <div class="pouch-label" id="simRows"></div>
+          <div class="pouch-foot"><span id="simKcal">— kcal / serving</span><span class="pouch-bar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. REVIEWS ================= -->
+<section class="section section--light" id="reviews">
+  <div class="container">
+    <div class="reviews-head">
+      <div class="section-head reveal">
+        <div class="eyebrow">Real Reviews</div>
+        <h2 class="h-title">숫자로 증명하는<br>리얼 후기</h2>
+      </div>
+      <div class="review-stats reveal">
+        <div><b class="num">4.9</b><span>평균 만족도</span></div>
+        <div><b class="num">87%</b><span>3개월 이상 구독 유지</span></div>
+        <div><b class="num">-41%</b><span>월 보충제 지출 감소</span></div>
+      </div>
+    </div>
+    <div class="tabs" id="reviewTabs" role="tablist">
+      <button class="tab is-active" data-f="all" role="tab" aria-selected="true">전체</button>
+      <button class="tab" data-f="diet" role="tab" aria-selected="false">다이어트/체지방감량</button>
+      <button class="tab" data-f="weight" role="tab" aria-selected="false">웨이트/근비대</button>
+      <button class="tab" data-f="run" role="tab" aria-selected="false">러닝/유산소</button>
+      <button class="tab" data-f="lactose" role="tab" aria-selected="false">유당불내증 개선</button>
+    </div>
+    <div class="review-grid" id="reviewGrid"></div>
+  </div>
+</section>
+
+<!-- ================= 7. PRICING ================= -->
+<section class="section section--white" id="lineup">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <div class="eyebrow">Smart Subscription</div>
+      <h2 class="h-title">매달 몸이 바뀌니까,<br>포뮬러도 매달 바뀌어야 합니다.</h2>
+      <p class="h-sub">1회 구매로 체험하거나, 스마트 구독으로 신체 변화에 맞춰 진화하는 포뮬러를 받아보세요.</p>
+    </div>
+
+    <div class="pricing">
+      <div class="plan reveal">
+        <span class="plan-tag">ONE-TIME</span>
+        <h3>1회 일반 구매</h3>
+        <p class="plan-desc">맞춤 포뮬러 1팩 (30회분)</p>
+        <div class="plan-price"><b>45,000</b><span>원</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>1:1 맞춤 포뮬러 조제</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>배송비 3,000원 (조건부)</li>
+          <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>포뮬러 업데이트 불가 (동일 배합)</li>
+          <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>스타터 웰컴 키트 미제공</li>
+        </ul>
+        <a href="quiz.html" class="btn btn--outline btn--block">1회 구매로 시작하기</a>
+      </div>
+      <div class="plan plan--best reveal" data-delay="1">
+        <span class="plan-tag">추천 · SMART SUBSCRIPTION</span>
+        <h3>매직파우더 스마트 구독</h3>
+        <p class="plan-desc">매월 신체 변화를 반영해 재조제되는 포뮬러</p>
+        <div class="plan-price"><s>45,000</s><b>38,250</b><span>원 / 월</span><span class="plan-off">-15%</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>전회차 100% 무료 배송</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>매월 신체 변화 반영 포뮬러 재조제</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>전용 눈금 쉐이커 보틀 + 계량 스쿱 무료</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>언제든 1클릭 일시정지 / 해지 가능</li>
+        </ul>
+        <a href="quiz.html" class="btn btn--lime btn--block">첫 달 15% 할인받고 나만의 파우더 만들기</a>
+      </div>
+    </div>
+
+    <div class="compare-wrap reveal">
+      <table class="compare">
+        <thead>
+          <tr><th scope="col">혜택 항목</th><th scope="col">1회 일반 구매</th><th scope="col" class="best">매직파우더 스마트 구독 (추천)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>가격 할인</td><td>정가 (45,000원)</td><td class="best">15% 할인 (38,250원)</td></tr>
+          <tr><td>배송비</td><td>3,000원 (조건부)</td><td class="best">전회차 100% 무료 배송</td></tr>
+          <tr><td>포뮬러 업데이트</td><td>불가 (동일 배합)</td><td class="best">매월 신체 변화 반영 포뮬러 재조제</td></tr>
+          <tr><td>스타터 웰컴 키트</td><td>미제공</td><td class="best">전용 눈금 쉐이커 보틀 + 계량 스쿱 무료</td></tr>
+          <tr><td>구독 관리</td><td>해당 없음</td><td class="best">언제든 1클릭 일시정지 / 해지 가능</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flavors">
+      <h3 class="reveal">4가지 플레이버 라인업</h3>
+      <p class="reveal">모든 포뮬러는 원하는 맛으로 조제됩니다.</p>
+      <div class="flavor-grid">
+        <div class="flavor reveal" style="--sw:radial-gradient(circle at 30% 30%,#7a4a2d,#3b2116)"><div class="flavor-swatch"></div><small>DOUBLE CHOCO</small><h4>더블 초콜릿</h4><p>네덜란드산 프리미엄 카카오</p></div>
+        <div class="flavor reveal" data-delay="1" style="--sw:radial-gradient(circle at 30% 30%,#e6cf9f,#b8955a)"><div class="flavor-swatch"></div><small>17-GRAIN MISUGARU</small><h4>고소한 미숫가루</h4><p>국산 17곡</p></div>
+        <div class="flavor reveal" data-delay="2" style="--sw:radial-gradient(circle at 30% 30%,#a8d672,#5b8a2c)"><div class="flavor-swatch"></div><small>JEJU MATCHA</small><h4>말차</h4><p>제주 유기농 말차</p></div>
+        <div class="flavor reveal" data-delay="3" style="--sw:radial-gradient(circle at 30% 30%,#ffffff,#d7d9de)"><div class="flavor-swatch"></div><small>CLEAN UNFLAVORED</small><h4>클린 무맛</h4><p>순수 원료 그대로</p></div>
+      </div>
+      <p class="sweetener reveal">설탕 대신 천연 스테비아와 알룰로스로 깔끔한 단맛을 구현했습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. FAQ ================= -->
+<section class="section section--light" id="faq">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="h-title">자주 묻는 질문</h2>
+    </div>
+    <div class="faq reveal" id="faqList">
+      <details open>
+        <summary><span class="q">Q1</span>정말 제 몸에 딱 맞게 만들어지나요?<span class="plus" aria-hidden="true"></span></summary>
+        <div class="a">네, 매직파우더는 사전 설문을 통해 수집된 <b>12가지 건강 및 운동 변수</b>를 자체 알고리즘으로 분석하여 1g 단위로 최적의 비율을 맞춤 조제합니다.</div>
+      </details>
+      <details>
+        <summary><span class="q">Q2</span>유당불내증이 심한데 마셔도 괜찮을까요?<span class="plus" aria-hidden="true"></span></summary>
+        <div class="a">물론입니다. 진단 설문에서 유당 민감도를 체크하시면 <b>유당이 99% 이상 제거된 분리유청단백(WPI)</b> 또는 <b>100% 식물성 분리단백(완두·쌀)</b> 베이스로 자동 배합됩니다.</div>
+      </details>
+      <details>
+        <summary><span class="q">Q3</span>정기 구독 중 운동 목표가 바뀌면 어떻게 하나요?<span class="plus" aria-hidden="true"></span></summary>
+        <div class="a">마이페이지의 <b>'포뮬러 재진단'</b> 기능을 통해 언제든지 목표(예: 감량 → 근육 증가)를 변경할 수 있으며, 다음 결제 회차부터 즉시 반영됩니다.</div>
+      </details>
+      <details>
+        <summary><span class="q">Q4</span>맛은 어떤 종류가 있나요? 인공 감미료 맛이 심한가요?<span class="plus" aria-hidden="true"></span></summary>
+        <div class="a">네덜란드산 프리미엄 카카오로 맛을 낸 <b>'더블 초콜릿'</b>, 국산 17곡 <b>'고소한 미숫가루'</b>, 제주 유기농 <b>'말차'</b>, 그리고 순수 원료 그대로의 <b>'클린 무맛'</b> 중 선택 가능하며, 설탕 대신 천연 스테비아와 알룰로스로 깔끔한 맛을 구현했습니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 9. FINAL CTA ================= -->
+<section class="section section--dark final">
+  <div class="container reveal">
+    <div class="eyebrow">Start Now</div>
+    <h2>남의 비율은 이제 그만.<br><span class="hl-lime">내 몸의 비율</span>을 찾을 시간.</h2>
+    <p>3분이면 충분합니다. 지금 바로 당신만의 포뮬러를 설계하세요.</p>
+    <a href="quiz.html" class="btn btn--lime">첫 달 15% 할인받고 나만의 파우더 만들기
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <div class="final-meta">언제든 1클릭 일시정지 / 해지 · 전회차 무료 배송</div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-mark"></span>MAGIC POWDER</a>
+        <p style="margin:0">비율이 바뀌면, 몸이 바뀝니다.<br>개인 맞춤형 영양 파우더 D2C 플랫폼</p>
+      </div>
+      <div>
+        <h4>서비스</h4>
+        <ul>
+          <li><a href="quiz.html">맞춤 파우더 설계</a></li>
+          <li><a href="#science">포뮬러 &amp; 과학</a></li>
+          <li><a href="#lineup">제품 라인업</a></li>
+          <li><a href="#reviews">리얼 후기</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>고객 지원</h4>
+        <ul>
+          <li><a href="#faq">자주 묻는 질문</a></li>
+          <li><a href="#" data-toast="마이페이지 · 구독 관리는 로그인 후 이용할 수 있어요.">구독 관리</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#"><b style="color:#c9cbd1">개인정보처리방침</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>1:1 영양 상담</h4>
+        <a href="#" class="kakao" data-toast="카카오톡 상담 채널로 연결됩니다. (데모)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4C7 4 3 7.1 3 11c0 2.5 1.7 4.7 4.2 5.9l-.9 3.3c-.1.3.3.6.6.4l3.9-2.6c.4 0 .8.1 1.2.1 5 0 9-3.1 9-7s-4-7.1-9-7.1Z"/></svg>
+          카카오톡 상담하기
+        </a>
+        <p style="margin:0">평일 09:00 - 18:00<br>(점심 12:00 - 13:00, 주말·공휴일 휴무)</p>
+      </div>
+    </div>
+    <div class="certs">
+      <span class="cert"><i>H</i>식약처 HACCP 인증</span>
+      <span class="cert"><i>G</i>GMP 적합 인증</span>
+      <span class="cert"><i>I</i>ISO22000</span>
+    </div>
+    <div class="legal">
+      <p>(주)매직파우더 · 대표 OOO · 사업자등록번호 000-00-00000 · 통신판매업신고 제0000-서울OO-0000호</p>
+      <p>건강기능식품 유통전문판매업 신고번호 제0000-0000000호 · 주소 서울특별시 OO구 OO로 00 · 고객센터 1600-0000</p>
+      <p>© 2026 MAGIC POWDER. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

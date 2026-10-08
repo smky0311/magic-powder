@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3분 맞춤 진단 | 매직파우더</title>
+  <meta name="description" content="6단계 3분 진단으로 나만의 맞춤 단백질 · 영양 파우더 포뮬러를 설계하세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="나의 매직파우더 맞춤 포뮬러">
+  <meta property="og:description" content="3분 진단으로 완성한 1:1 맞춤 영양 포뮬러를 확인해 보세요.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="quiz-body">
+
+<header class="gnb gnb--solid" id="gnb">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="매직파우더 홈"><span class="logo-mark"></span>MAGIC POWDER</a>
+    <nav class="gnb-nav" id="gnbNav" aria-label="주 메뉴">
+      <a href="quiz.html" class="is-active">맞춤 파우더 설계</a>
+      <a href="index.html#science">포뮬러 &amp; 과학</a>
+      <a href="index.html#lineup">제품 라인업</a>
+      <a href="index.html#reviews">리얼 후기</a>
+      <a href="#" data-toast="마이페이지 · 구독 관리는 로그인 후 이용할 수 있어요.">마이페이지 / 구독 관리</a>
+    </nav>
+    <div class="gnb-actions">
+      <a href="index.html" class="btn btn--ghost btn--sm">나가기</a>
+      <button class="gnb-toggle" id="gnbToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="gnbNav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="quiz-progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<main class="quiz-wrap">
+  <div class="container">
+
+    <!-- ============ QUESTIONS ============ -->
+    <div class="quiz-layout" id="quizLayout">
+      <form id="quizForm" novalidate>
+        <div class="quiz-meta">
+          <span>STEP <b id="stepNow">1</b> / 6</span>
+          <span class="quiz-dots" id="quizDots"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+
+        <!-- STEP 1 -->
+        <fieldset class="q-step is-active" data-step="1">
+          <h2>기본 프로필을 알려주세요</h2>
+          <p>체중과 신장은 1회 단백질 함량을 1g 단위로 산출하는 기준이 됩니다.</p>
+          <div class="q-field">
+            <span class="q-legend">성별</span>
+            <div class="opts opts--keep" style="--cols:2">
+              <div class="opt opt--sm"><input type="radio" name="sex" id="sex-m" value="m"><label for="sex-m">남성<span class="chk"></span></label></div>
+              <div class="opt opt--sm"><input type="radio" name="sex" id="sex-f" value="f"><label for="sex-f">여성<span class="chk"></span></label></div>
+            </div>
+          </div>
+          <div class="q-field">
+            <span class="q-legend">연령대</span>
+            <div class="opts opts--keep" style="--cols:5">
+              <div class="opt opt--sm"><input type="radio" name="age" id="age-10" value="10"><label for="age-10">10대</label></div>
+              <div class="opt opt--sm"><input type="radio" name="age" id="age-20" value="20"><label for="age-20">20대</label></div>
+              <div class="opt opt--sm"><input type="radio" name="age" id="age-30" value="30"><label for="age-30">30대</label></div>
+              <div class="opt opt--sm"><input type="radio" name="age" id="age-40" value="40"><label for="age-40">40대</label></div>
+              <div class="opt opt--sm"><input type="radio" name="age" id="age-50" value="50"><label for="age-50">50대+</label></div>
+            </div>
+          </div>
+          <div class="q-field">
+            <span class="q-legend">신장 · 체중</span>
+            <div class="inputs">
+              <div class="num-input"><input type="number" name="height" inputmode="decimal" min="120" max="220" placeholder="170" aria-label="신장 (cm)"><span>cm</span></div>
+              <div class="num-input"><input type="number" name="weight" inputmode="decimal" min="30" max="200" placeholder="65" aria-label="체중 (kg)"><span>kg</span></div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- STEP 2 -->
+        <fieldset class="q-step" data-step="2">
+          <h2>현재 운동 루틴은 어떤가요?</h2>
+          <p>운동 종목과 강도에 따라 탄수화물·전해질·아미노산 비율이 달라집니다.</p>
+          <div class="q-field">
+            <span class="q-legend">주 운동 종목</span>
+            <div class="opts" style="--cols:2">
+              <div class="opt"><input type="radio" name="sport" id="sp-w" value="weight"><label for="sp-w"><span class="ico">🏋️</span><span>웨이트<small>헬스 · 근력 운동</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="sport" id="sp-p" value="pilates"><label for="sp-p"><span class="ico">🧘</span><span>필라테스 / 요가<small>코어 · 유연성</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="sport" id="sp-r" value="run"><label for="sp-r"><span class="ico">🏃</span><span>러닝 / 사이클<small>유산소 · 지구력</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="sport" id="sp-c" value="crossfit"><label for="sp-c"><span class="ico">⚡</span><span>크로스핏 / 구기종목<small>고강도 · 복합</small></span><span class="chk"></span></label></div>
+            </div>
+          </div>
+          <div class="q-field">
+            <span class="q-legend">주당 운동 횟수</span>
+            <div class="opts opts--keep" style="--cols:3">
+              <div class="opt opt--sm"><input type="radio" name="freq" id="fq-1" value="1"><label for="fq-1">주 1~2회</label></div>
+              <div class="opt opt--sm"><input type="radio" name="freq" id="fq-2" value="2"><label for="fq-2">주 3~4회</label></div>
+              <div class="opt opt--sm"><input type="radio" name="freq" id="fq-3" value="3"><label for="fq-3">주 5회 이상</label></div>
+            </div>
+          </div>
+          <div class="q-field">
+            <span class="q-legend">1회 평균 운동 시간</span>
+            <div class="opts opts--keep" style="--cols:3">
+              <div class="opt opt--sm"><input type="radio" name="dur" id="du-1" value="1"><label for="du-1">30분 미만</label></div>
+              <div class="opt opt--sm"><input type="radio" name="dur" id="du-2" value="2"><label for="du-2">30~60분</label></div>
+              <div class="opt opt--sm"><input type="radio" name="dur" id="du-3" value="3"><label for="du-3">60분 이상</label></div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- STEP 3 -->
+        <fieldset class="q-step" data-step="3">
+          <h2>가장 중요한 목표는 무엇인가요?</h2>
+          <p>하나만 선택해 주세요. 목표는 구독 중에도 언제든 바꿀 수 있어요.</p>
+          <div class="q-field">
+            <div class="opts" style="--cols:1">
+              <div class="opt"><input type="radio" name="goal" id="g-diet" value="diet"><label for="g-diet"><span class="ico">🔥</span><span>체중 및 체지방 감량<small>다이어트 · 커팅</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="goal" id="g-bulk" value="bulk"><label for="g-bulk"><span class="ico">💪</span><span>근육량 증가 및 체격 확대<small>린매스업 · 벌크업</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="goal" id="g-rec" value="recovery"><label for="g-rec"><span class="ico">⚡</span><span>운동 후 피로 회복 및 지구력 강화<small>리커버리 · 엔듀런스</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="goal" id="g-meal" value="meal"><label for="g-meal"><span class="ico">🥣</span><span>일상 단백질 및 식사 대용 영양 보충<small>밀 리플레이스먼트</small></span><span class="chk"></span></label></div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- STEP 4 -->
+        <fieldset class="q-step" data-step="4">
+          <h2>소화 및 알레르기를 체크해 주세요</h2>
+          <p>속 편한 포뮬러를 위해 단백질 베이스와 소화효소 배합량이 결정됩니다.</p>
+          <div class="q-field">
+            <span class="q-legend">우유/유제품 섭취 시 속이 불편한가요?</span>
+            <div class="opts opts--keep" style="--cols:3">
+              <div class="opt opt--sm"><input type="radio" name="lactose" id="la-0" value="0"><label for="la-0">없음</label></div>
+              <div class="opt opt--sm"><input type="radio" name="lactose" id="la-1" value="1"><label for="la-1">가끔 있음</label></div>
+              <div class="opt opt--sm"><input type="radio" name="lactose" id="la-2" value="2"><label for="la-2">자주 · 심함</label></div>
+            </div>
+          </div>
+          <div class="q-field">
+            <span class="q-legend">카페인 민감도 <small>오후에 커피를 마시면 잠들기 어렵나요?</small></span>
+            <div class="opts opts--keep" style="--cols:2">
+              <div class="opt opt--sm"><input type="radio" name="caffeine" id="cf-1" value="1"><label for="cf-1">네, 민감해요</label></div>
+              <div class="opt opt--sm"><input type="radio" name="caffeine" id="cf-0" value="0"><label for="cf-0">아니요, 괜찮아요</label></div>
+            </div>
+          </div>
+          <div class="q-field">
+            <span class="q-legend">알레르기 유발 성분 <small>해당 항목 모두 선택</small></span>
+            <div class="opts opts--keep" style="--cols:4">
+              <div class="opt opt--sm"><input type="checkbox" name="allergy" id="al-soy" value="soy"><label for="al-soy">대두</label></div>
+              <div class="opt opt--sm"><input type="checkbox" name="allergy" id="al-nut" value="nut"><label for="al-nut">견과류</label></div>
+              <div class="opt opt--sm"><input type="checkbox" name="allergy" id="al-glu" value="gluten"><label for="al-glu">글루텐</label></div>
+              <div class="opt opt--sm"><input type="checkbox" name="allergy" id="al-none" value="none"><label for="al-none">없음</label></div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- STEP 5 -->
+        <fieldset class="q-step" data-step="5">
+          <h2>어떤 맛을 선호하세요?</h2>
+          <p>설탕 대신 천연 스테비아와 알룰로스로 깔끔한 단맛을 냅니다.</p>
+          <div class="q-field">
+            <div class="opts" style="--cols:2">
+              <div class="opt"><input type="radio" name="flavor" id="fl-choco" value="choco"><label for="fl-choco"><span class="ico" style="background:#3b2116">🍫</span><span>더블 초콜릿<small>네덜란드산 프리미엄 카카오</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="flavor" id="fl-misu" value="misu"><label for="fl-misu"><span class="ico" style="background:#5c4a2a">🌾</span><span>고소한 미숫가루<small>국산 17곡</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="flavor" id="fl-matcha" value="matcha"><label for="fl-matcha"><span class="ico" style="background:#2f4a1a">🍵</span><span>말차<small>제주 유기농</small></span><span class="chk"></span></label></div>
+              <div class="opt"><input type="radio" name="flavor" id="fl-plain" value="plain"><label for="fl-plain"><span class="ico">🤍</span><span>클린 무맛<small>순수 원료 그대로</small></span><span class="chk"></span></label></div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- STEP 6 -->
+        <fieldset class="q-step" data-step="6">
+          <h2>파우치에 새길 이름을 정해주세요</h2>
+          <p>본인의 이름 또는 동기부여 문구가 전용 라벨에 인쇄됩니다.</p>
+          <div class="q-field">
+            <input type="text" class="text-input" name="label" id="labelInput" maxlength="16" placeholder="MINSU_FIT" autocomplete="off" aria-label="라벨 각인 텍스트">
+            <div class="input-help"><span>영문 대문자 · 숫자 · _ - 사용 권장</span><span><b id="labelCount" class="num">0</b> / 16</span></div>
+            <div class="suggest" id="suggest">
+              <button type="button">MINSU_FIT</button><button type="button">D-30_RUNNER</button><button type="button">NO_EXCUSES</button><button type="button">SUMMER_READY</button>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="q-error" id="qError" role="alert"></div>
+        <div class="q-nav">
+          <button type="button" class="btn btn--ghost" id="prevBtn" disabled>이전</button>
+          <button type="submit" class="btn btn--lime" id="nextBtn">다음
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <aside class="quiz-aside" aria-label="실시간 라벨 미리보기">
+        <div class="pouch" id="livePouch">
+          <div class="pouch-brand"><span>MAGIC <b>POWDER</b></span><span>LIVE PREVIEW</span></div>
+          <div class="pouch-name"><span id="liveName">YOUR NAME</span><span class="caret"></span></div>
+          <div class="pouch-base" id="liveBase">진단을 진행하면 라벨이 완성됩니다</div>
+          <div class="pouch-label">
+            <div class="pouch-row"><span>Goal</span><b id="liveGoal">—</b></div>
+            <div class="pouch-row"><span>Sport</span><b id="liveSport">—</b></div>
+            <div class="pouch-row"><span>Base</span><b id="liveProt">—</b></div>
+            <div class="pouch-row"><span>Flavor</span><b id="liveFlavor">—</b></div>
+          </div>
+          <div class="pouch-foot"><span>NET 1,000g</span><span class="pouch-bar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+        </div>
+        <p class="quiz-aside-note">응답할 때마다 내 라벨이 실시간으로 완성돼요</p>
+      </aside>
+    </div>
+
+    <!-- ============ ANALYZING ============ -->
+    <div class="analyzing" id="analyzing" aria-live="polite">
+      <div class="spinner"></div>
+      <h2>AI 영양 엔진이 포뮬러를 설계 중입니다</h2>
+      <p id="analyzingText">12가지 건강 · 운동 변수 분석 중...</p>
+    </div>
+
+    <!-- ============ RESULT ============ -->
+    <section class="result" id="result">
+      <div class="result-hero">
+        <div>
+          <div class="result-kicker" id="rNo">FORMULA #0000</div>
+          <h1 id="rTitle">—</h1>
+          <p class="result-lead" id="rLead"></p>
+          <div class="result-chips" id="rChips"></div>
+        </div>
+        <div class="pouch" id="resultPouch">
+          <div class="pouch-brand"><span>MAGIC <b>POWDER</b></span><span id="rPouchNo" class="num">#0000</span></div>
+          <div class="pouch-name" id="rPouchName">—</div>
+          <div class="pouch-base" id="rPouchBase"></div>
+          <div class="pouch-label" id="rPouchRows"></div>
+          <div class="pouch-foot"><span id="rPouchFlavor">—</span><span class="pouch-bar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+        </div>
+      </div>
+
+      <div class="result-grid">
+        <div class="panel">
+          <h3>맞춤 영양 레이더</h3>
+          <p>평균적인 기성 보충제 대비 나의 배합 밸런스</p>
+          <svg class="radar" id="radar" viewBox="-170 -150 340 310" role="img" aria-label="개인 맞춤 영양 레이더 차트"></svg>
+        </div>
+        <div class="panel">
+          <h3>1회 섭취 성분표</h3>
+          <p id="rServing">1스쿱 기준</p>
+          <table class="nutri" id="rTable"></table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>1회 섭취 가이드</h3>
+        <p>최적의 흡수를 위해 아래 가이드를 따라주세요.</p>
+        <div class="guide" id="rGuide"></div>
+      </div>
+
+      <div class="panel result-buy">
+        <div>
+          <h3>스마트 구독으로 시작하기</h3>
+          <div class="buy-price"><s>45,000원</s><b>38,250</b><span>원 / 월 (30회분)</span><span class="plan-off">-15%</span></div>
+          <div class="buy-perks"><span>전회차 무료 배송</span><span>매월 포뮬러 재조제</span><span>쉐이커 + 스쿱 웰컴 키트</span><span>1클릭 해지</span></div>
+        </div>
+        <div class="buy-actions">
+          <button type="button" class="btn btn--lime" id="subscribeBtn">즉시 구독 결제하기</button>
+          <button type="button" class="btn btn--ghost" id="cartBtn">장바구니 담기 (1회 45,000원)</button>
+        </div>
+      </div>
+
+      <div class="result-foot">
+        <button type="button" class="btn btn--ghost btn--sm" id="shareBtn">내 포뮬러 공유하기</button>
+        <button type="button" class="btn btn--ghost btn--sm" id="restartBtn">다시 진단하기</button>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
